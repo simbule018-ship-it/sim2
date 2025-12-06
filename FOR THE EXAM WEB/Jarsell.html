@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color: rgb(16, 196, 157);
+    }
+  .image-container {
+      width: 600px;
+      height: 600px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 70%;
+      height: 70%;
+      object-fit: cover; /* keeps images looking normal */
+      border-radius: 12px;
+    }
+.abc{
+    width: 100%;
+  overflow: hidden;
+  /*white-space: nowrp;*/
+  white-space: nowrap;
+  border: 1px solid;
+  box-sizing: none;
+  box-shadow: 0 14px 14px rgba(23, 24, 23, 0.753);
+  border-radius: 12px;
+  /*border: 1px solid;*/
+  padding: 0.05%;
+  background-color: olive;
+}
+   .abc span{
+    display: inline-block;
+  padding-left: 10%;
+  animation: name 30s linear infinite;
+   }     
+   @keyframes name {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+   }
+    </style>
+</head>
+<body>
+
+     <h2 style="text-align:center;">Jaresell </h2>
+
+
+   <Center><img id="changingImage" src="pictures/j1.jpg" alt="Image"></Center>
+
+
+    <div class="abc" >
+        <span>This is Jaresell simukoko he is studying diploma in agricuture and in 2025 he is his first year he is going to finish in 2027 </span>
+    </div>
+    <a href="Current Project Activities.html"><I>BACK</I></a>
+    <script>
+  
+  const images = ["pictures/j1.jpg", "pictures/j2.jpg"];
+    let index = 0;
+
+    function changeImage() {
+      index = (index + 1) % images.length;
+      document.getElementById("changingImage").src = images[index];
+    }
+
+    setInterval(changeImage, 3000); // changes every 3 seconds
+  </script>
+
+</body>
+</html>

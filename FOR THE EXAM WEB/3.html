@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body{
+  background-color: burlywood;
+  }
+  .part1{
+    padding: 20px;
+    background-color: rgb(171, 197, 231);
+    margin-bottom: 3%;
+    border-radius: 16px;
+    box-shadow: 0 14px 14px rgba(23, 24, 23, 0.753);
+  }
+ .frist{
+  box-shadow: 0 14px 14px rgba(0, 0, 0, 0.753);
+    padding: 40px;
+    background-color: rgb(210, 200, 233);
+    margin-top: 1%;
+    margin-left: 17%;
+    margin-right: 2%;
+    font-size: larger;
+    border-radius: 20px;
+  
+  }
+ .second{
+    padding: 30Px;
+    background-color: rgb(66, 37, 85);
+    border-radius: 20px;
+    margin-bottom: 1%;
+    box-shadow: 0 14px 14px rgba(23, 24, 23, 0.753);
+  }
+  
+ button{
+   background-color:  rgba(212, 193, 193, 0.185);
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px ;
+    margin-top: 15px;
+    transition: all 0.4s ease;
+ }
+  
+ .line{
+ width: 100%;
+  overflow: hidden;
+  /*white-space: nowrp;*/
+  white-space: nowrap;
+  box-sizing: none;
+  box-shadow: 0 14px 14px rgba(23, 24, 23, 0.753);
+  border-radius: 12px;
+  /*border: 1px solid;*/
+  padding: 0.05%;
+  background-color: olive;
+}
+.line span{
+    display: inline-block;
+  padding-left: 10%;
+  animation: line 50s linear infinite;
+}
+
+@keyframes line {
+    0%{
+      transform: translateX(100vw);
+    } 
+    100%{
+      transform: translateX(-100%)
+    }
+    }
+  a {
+    text-decoration: none;
+  }
+  .img1{
+   /* border-radius: 100%;*/
+    margin-top: -20%;
+    margin-bottom: 9%;
+    margin-left: 2%;
+    border-radius: 100px;
+    box-shadow: 0 14px 14px rgba(226, 209, 57, 0.753);
+  }
+  h1{
+     background-color: rgb(57, 111, 211);
+     box-shadow: 0 14px 14px rgba(8, 32, 46, 0.753);
+     border-radius: 12px;
+  }
+    /*puting back ground picture to be change*/
+    /*body{
+      margin: 0;
+      padding: 0;
+      background-attachment: fixed;
+      background-size: cover;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: picture 60s infinite;
+    }
+    @keyframes picture {
+      0%{
+        background-image: url("WhatsApp\ Image\ 2025-08-16\ at\ 18.38.15_07f7e599.jpg");
+      }
+      33.33%{
+        background-image: url("WhatsApp\ Image\ 2025-08-16\ at\ 18.38.16_aa3be0a2.jpg");
+      }
+            100%{
+        background-image: url("WhatsApp\ Image\ 2025-08-16\ at\ 18.38.15_07f7e599.jpg");
+      }
+    }*/
+/*Slider container*/
+  .slider-container {
+    padding: 20px;
+    padding-left: 20px;
+    /*background-color: rgb(151, 151, 235);*/
+    width: 80%;
+    max-width: 400px;
+    height: 200px;
+    margin: 20px auto 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 14px 14px rgba(8, 32, 46, 0.753);
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+ .slide img {
+   margin-right: 3%;
+ }
+
+ .slide.active {
+    opacity: 1;
+  }
+
+  /* Navigation dots */
+  .dots {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background: #333;
+  }
+
+  .moving{              
+  width: 100%;
+  overflow: hidden;
+  /*white-space: nowrp;*/
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 1px solid;
+  padding: 0.05%;
+  background-color: rgb(91, 159, 236);
+}
+#slider {
+      width: 800px;
+      height: 600px;
+      overflow: hidden;
+      margin: 20px auto;
+      box-shadow: 0 14px 14px rgba(1, 17, 26, 0.753);
+      border-radius: 12px;
+    }
+    #slider img {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    #slider img.active {
+      display: block;
+    }
+  footer{
+    background-color: #333;
+    padding: 5%;
+  }  
+
+</style>
+</head>
+<body>
+<center><h1>SAVING LIVES THROUGH ALTERNATE OPTIONS (Z) LTD</h1></center><br> 
+    <header><div class="part1">
+    <center><nav class="frist">
+    <button><a href="Country Overview.html">Country Overview</a></button>
+    <button><a href="Saving Lives Through Alternate Options (Z) Ltd.html">Saving Lives Through Alternate Options (Z) Ltd</a></button>
+    <button><a href="Problem Statement.html">Problem Statement</a></button>
+    <button><a href="goal.html">Goal</a></button>
+    <button><a href="Current Project Activities.html">Current Project Activities</a></button>
+    <button><a href="Child Identification Process.html">Child Identification Process</a></button>
+    <button><a href="Project Management.html">Project Management</a></button>
+    <button><a href="games.html">Games</a></button>
+</nav></header>
+</center><img class="img1" src="pictures/B.jpg" src="c:\Users\MISHECK SIMBULE\Desktop\FOR THE EXAM WEB\pictures\WhatsApp Image 2025-08-16 at 18.38.16_aa3be0a2.jpg" width="15%" height="10%">
+</div>
+<!--....................moving words on the website..........................-->
+<div class="line">
+    <span>welcome to saving lives through alternate options (Z) ltd it is a non-governmental organisation </span>
+ </div>
+<!--for the pictures that are are sliding-->
+<center><div class="slider-container">
+  <div class="slide active">
+  <center><img style="border-radius: 400px;margin-left: -10%; "src="pictures/B.jpg"></center>
+  </div>
+  <div class="slide">
+  <<img style="margin-left: -10%;" src="pictures/A.jpg"height="45%">
+  </div>
+  <div class="slide">
+  <img style="border-radius: 400px;margin-left: -10%; "src="pictures/B.jpg">
+  </div>
+  <div class="dots"></div>
+ </div></center>
+ <br><br>
+
+
+
+<center><div id="slider">
+ <img src="pictures/c.jpg" width="70%" height="30%" class="active">
+ <img src="pictures/c1.jpg" width="50%" height="20%">
+ <img src="pictures/c2.jpg" width="50%" height="20%">
+ <img src="pictures/c3.jpg" width="50%" height="20%">
+ <img src="pictures/c4.jpg" width="50%" height="20%">
+ <img src="pictures/c5.jpg" width="50%" height="20%">
+ </div>
+</center>
+
+     <center><footer><p>CopyRight @2025</p></footer><center>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dotsContainer = document.querySelector('.dots');
+
+  let index = 0;
+
+  // Create dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      index = i;
+      updateSlider();
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.dot');
+
+  function updateSlider() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+  }
+
+  function autoSlide() {
+    index = (index + 1) % slides.length;
+    updateSlider();
+  }
+  setInterval(autoSlide, 3000); // Change every 3 seconds 
+
+ // for the last part of the slide
+    const images = document.querySelectorAll('#slider img');
+    let current = 0;
+
+    function showNextImage() {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }
+
+    setInterval(showNextImage, 3000); // Change image every 3 seconds
+</script>
+
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-container">
+  <div class="card">
+    <img src="social-work.jpg" alt="Social Work">
+    <div class="card-content">
+      <h3>Bachelor of Social Work Practice and Development</h3>
+      <p>School of Humanities</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="environmental-management.jpg" alt="Environmental Management">
+    <div class="card-content">
+      <h3>Bachelor Of Science In Environmental Management System</h3>
+      <p>School of Engineering</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="electrical-engineering.jpg" alt="Electrical Engineering">
+    <div class="card-content">
+      <h3>Bachelor of Science in Electrical and Electronics Engineering</h3>
+      <p>School of Engineering</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="computer-science.jpg" alt="Computer Science">
+    <div class="card-content">
+      <h3>Bachelor of Science in Computer Science</h3>
+      <p>School of Engineering</p>
+    </div>
+  </div>
+</div>
+<style>
+    .card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #fff;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #666;
+}
+</style>
+</body>
+</html>

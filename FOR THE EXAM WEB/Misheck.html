@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+<style>
+  .image-container {
+      width: 600px;
+      height: 600px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 70%;
+      height: 70%;
+      object-fit: cover; /* keeps images looking normal */
+      border-radius: 12px;
+    }
+
+.moving{              
+      width: 100%;
+  overflow: hidden;
+  /*white-space: nowrp;*/
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 1px solid;
+  padding: 0.05%;
+   box-sizing: none;
+  box-shadow: 0 14px 14px rgba(23, 24, 23, 0.753);
+  border-radius: 12px;
+  /*border: 1px solid;*/
+  padding: 0.05%;
+  background-color: olive;
+}
+.moving span{
+  
+    display: inline-block;
+  padding-left: 10%;
+  animation: word 30s linear infinite;
+  
+}
+@keyframes word{
+    0%{
+      transform: translateX(100vw);
+    } 
+    100%{
+      transform: translateX(-100%)
+    }}
+    a{
+    text-decoration: none;
+     box-shadow: 0 14px 14px rgba(23, 24, 23, 0.753);
+     color: black;
+     background-color: rgb(219, 219, 240);
+     padding-left: 7px;
+     padding-right: 7px;
+     border-radius: 12px;
+    }
+    </style>
+</head>
+<body>
+  <h2 style="text-align:center;"><i>SIMBULE MISHECK</i></h2>
+  <div class="image-container">
+  <center><img id="changingImage" src="pictures/icu.jpg" alt="Image">
+    
+    
+  </div></center>
+
+
+<div class="moving">
+    <span>This is MISHECK SIMBULE he is studying Bachelors of science in Electrical 
+        and Electronics Engineering (triple E ) he is in this first year 2025 he is going to finish in 2028 </span>
+    </div>
+     <p><a href="mailto:simbule018@gmail.com" title="click here"><I>Email misheck</I></a></p>
+    
+    <a href="Current Project Activities.html"><I>BACK</I></a>
+    
+    
+  <script>
+   const images = ["pictures/icu.jpg","pictures/M1.jpg", "pictures/M2.jpg","pictures/M3.jpg"];
+    let index = 0;
+
+    function changeImage() {
+      index = (index + 1) % images.length;
+      document.getElementById("changingImage").src = images[index];
+    }
+
+    setInterval(changeImage, 3000); // changes every 3 seconds
+  </script>
+</body>
+</html>

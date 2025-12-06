@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(60, 43, 105, 0.144);
+        }
+        .mis{
+            background-color: rgb(57, 111, 211);
+            box-shadow: 0 14px 14px rgba(0, 0, 0, 0.753);
+            margin-top: 10%;
+            margin-left: 35%;
+            margin-right: 30%;
+            margin-bottom: 20%;
+            padding: 40px;
+            border-radius: 20px;
+            font-style: italic;
+            font-size: medium;
+           
+        }
+         button{
+            background-color: rgba(107, 93, 228, 0.863);
+            padding:10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 3px 5px ;
+            margin-top: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+         a{
+            text-decoration: none;
+         }
+    input{
+        border-radius: 6px;
+        border: solid;
+        border-width: 1px;
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.753);
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="mis">
+    <label>What is your name</label>
+    <input id="h1" type="text" style="background-color: rgb(162, 181, 204);" ><br><br>
+    <label>In which year where you born </label>
+    <input id="1"  style="background-color: rgb(82, 170, 221);"><br><br>
+    <center><button id="h2">submit</button></center>
+    <h1 id="output"></h1>
+    <h1 id="3"></h1>
+    </div>
+    <a href="Index.html">BACK</a>
+    <!--codes for days 
+    mon = 1, tue = 2 wed = 3 thu = 4 fri = 5 sta = 6 sun= 0/7
+    mouths codes
+     jan and oct = 0 , fer,march and nov = 3, april and july = 6, may = 1, june = 4, aug = 2, sept and dec =5
+     from 1900 to 1999 we add 0 
+     from 2000 to 2099 we add 6 
+     the formula
+     (yl/4) +yl+ mc + date  + (0/6))/7
+     jan if it is giving the whole number then you day will be sub - 1 from the day
+    -->
+    
+    <script>
+         alert("this is a game ")
+          const h1 = document.getElementById("h1");
+         const h2 = document.getElementById("h2");
+         const output = document.getElementById("output");
+         h2.addEventListener(`click`, () => {
+            const inputtext = h1.value;
+            output.textContent ="Hey " + inputtext +" you are " ;
+            
+         });
+        let current_year= 2025;
+        let In_which_year_where_you_born;
+        let y;
+         In_which_year_where_you_born = Number( In_which_year_where_you_born)
+
+         document.getElementById("h2").onclick= function(){
+             In_which_year_where_you_born = document.getElementById("1").value;
+              In_which_year_where_you_born = Number( In_which_year_where_you_born)
+              y = current_year - In_which_year_where_you_born;
+              document.getElementById("3").textContent=y + " years old"
+
+         }
+       
+
+        
+    </script>
+</body>
+</html>
